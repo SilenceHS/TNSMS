@@ -40,7 +40,9 @@ namespace HRMS
             LD.ShowDialog();
             if (user.getid().Equals("-1"))
                 this.Close();
-            this.ShowDialog();
+            toolStripStatusLabel1.Text = "当前用户:" + user.getname();
+            this.Show();
+            
         }
     }
 }
