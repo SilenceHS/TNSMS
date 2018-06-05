@@ -11,7 +11,8 @@ namespace HRMS
 {
     public partial class MainWindow : Form
     {
-        User user = new User();
+       
+        static User user = null;
         public MainWindow()
         {
             LoginDialog LD = new LoginDialog();
@@ -32,7 +33,10 @@ namespace HRMS
 
         private void 重新登录ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           
+            this.Hide();
+            LoginDialog LD = new LoginDialog();
+            LD.ShowDialog();
+            this.ShowDialog();
         }
     }
 }
