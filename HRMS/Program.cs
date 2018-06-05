@@ -13,6 +13,7 @@ namespace HRMS
         [STAThread]
         static void Main()
         {
+            User user = null;
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new MainWindow());

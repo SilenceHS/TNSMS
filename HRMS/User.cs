@@ -5,12 +5,12 @@ using System.Text;
 
 namespace HRMS
 {
-    class User
+    public class User
     {
-        private int ID;
+        private string ID;
         private string Name;
         private string Position;
-        public User(int id,string name,string position)
+        public User(string id,string name,string position)
         {
             ID = id;
             Name = name;
@@ -19,6 +19,20 @@ namespace HRMS
         public User()
         {
 
+        }
+        public void SetUser(string  id, string name, string position)
+        {
+            ID = id;
+            Name = name;
+            Position = position;
+        }
+        public string getid()
+        {
+            return ID;
+        }
+        public string getname()
+        {
+            return Name;
         }
     }
 }

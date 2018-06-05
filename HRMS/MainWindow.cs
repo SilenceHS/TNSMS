@@ -11,15 +11,16 @@ namespace HRMS
 {
     public partial class MainWindow : Form
     {
-       
-        static User user = null;
+        User user = new User("-1","","");
         public MainWindow()
         {
-            LoginDialog LD = new LoginDialog();
+            LoginDialog LD = new LoginDialog(user);
             Application.Run(LD);
+            if (user.getid() .Equals("-1"))
+                this.Close();
             InitializeComponent();
+            toolStripStatusLabel1.Text = "当前用户:" + user.getname();
         }
-
        private void 资料查询ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             StuffForm SF = new StuffForm();
@@ -34,8 +35,11 @@ namespace HRMS
         private void 重新登录ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
-            LoginDialog LD = new LoginDialog();
+            user = new User("-1", "", "");
+            LoginDialog LD = new LoginDialog(user);
             LD.ShowDialog();
+            if (user.getid().Equals("-1"))
+                this.Close();
             this.ShowDialog();
         }
     }

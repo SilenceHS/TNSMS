@@ -99,6 +99,21 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Source\power_24px_1175644_easyicon.net.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Source\delete_24px_1175551_easyicon.net.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Source\back.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Source\button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Source\logback.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
