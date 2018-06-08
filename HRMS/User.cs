@@ -34,5 +34,9 @@ namespace HRMS
         {
             return Name;
         }
+        public string getposition()
+        {
+            return Position;
+        }
     }
 }

@@ -101,7 +101,7 @@ namespace HRMS
             DBAccess dbAccess = new DBAccess();
             if(StrValue=="ALL")//如果选择all，就直接获得所有
             {
-                datasetGrid = dbAccess.GetDataset("select * from dbo.tb_StuffBasic", "dbo.tb_StuffBasic");
+                datasetGrid = dbAccess.GetDataset("select * from dbo.tb_Student", "dbo.tb_Student");
                 dataGridView1.DataSource = datasetGrid.Tables[0];
                 //currentTextBox.Text = Grid_Info(dataGridView1);
                 //valueTextBox.Text = "";
@@ -111,7 +111,7 @@ namespace HRMS
             }
             else
             {
-                datasetGrid = dbAccess.GetDataset("select * from dbo.tb_StuffBasic where " + PreSelect + "='" + PreString + "'", "dbo.tb_StuffBasic");
+                datasetGrid = dbAccess.GetDataset("select * from dbo.tb_Student where " + PreSelect + "='" + PreString + "'", "dbo.tb_Student");
                 dataGridView1.DataSource = datasetGrid.Tables[0];
               /*currentTextBox.Text = Grid_Info(dataGridView1);
                 valueTextBox.Text = "";

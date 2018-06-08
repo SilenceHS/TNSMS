@@ -87,14 +87,14 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(661, 54);
+            this.groupBox1.Size = new System.Drawing.Size(825, 54);
             this.groupBox1.TabIndex = 15;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "分类查询";
             // 
             // searchButton
             // 
-            this.searchButton.Location = new System.Drawing.Point(496, 20);
+            this.searchButton.Location = new System.Drawing.Point(661, 18);
             this.searchButton.Name = "searchButton";
             this.searchButton.Size = new System.Drawing.Size(140, 23);
             this.searchButton.TabIndex = 3;
@@ -104,7 +104,7 @@
             // 
             // valueTextBox
             // 
-            this.valueTextBox.Location = new System.Drawing.Point(326, 20);
+            this.valueTextBox.Location = new System.Drawing.Point(407, 20);
             this.valueTextBox.Name = "valueTextBox";
             this.valueTextBox.Size = new System.Drawing.Size(141, 21);
             this.valueTextBox.TabIndex = 2;
@@ -112,7 +112,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(255, 23);
+            this.label2.Location = new System.Drawing.Point(336, 23);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(65, 12);
             this.label2.TabIndex = 0;
@@ -123,14 +123,14 @@
             this.fieldComboBox.FormattingEnabled = true;
             this.fieldComboBox.Items.AddRange(new object[] {
             "ALL",
-            "ID",
-            "Name",
-            "Sex",
-            "Position",
-            "Phone",
-            "Address",
+            "学号",
+            "姓名",
+            "性别",
+            "职务",
+            "电话",
+            "地址",
             "Email"});
-            this.fieldComboBox.Location = new System.Drawing.Point(74, 20);
+            this.fieldComboBox.Location = new System.Drawing.Point(106, 20);
             this.fieldComboBox.Name = "fieldComboBox";
             this.fieldComboBox.Size = new System.Drawing.Size(151, 20);
             this.fieldComboBox.TabIndex = 1;
@@ -139,7 +139,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(14, 23);
+            this.label1.Location = new System.Drawing.Point(46, 23);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(65, 12);
             this.label1.TabIndex = 0;
@@ -175,7 +175,7 @@
             this.panel2.Controls.Add(this.delButton);
             this.panel2.Controls.Add(this.modifyButton);
             this.panel2.Controls.Add(this.addButton);
-            this.panel2.Location = new System.Drawing.Point(11, 310);
+            this.panel2.Location = new System.Drawing.Point(11, 392);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(829, 123);
             this.panel2.TabIndex = 19;
@@ -335,7 +335,7 @@
             // picDeleteButton
             // 
             this.picDeleteButton.Enabled = false;
-            this.picDeleteButton.Location = new System.Drawing.Point(908, 370);
+            this.picDeleteButton.Location = new System.Drawing.Point(900, 317);
             this.picDeleteButton.Name = "picDeleteButton";
             this.picDeleteButton.Size = new System.Drawing.Size(152, 23);
             this.picDeleteButton.TabIndex = 22;
@@ -347,6 +347,7 @@
             // 
             this.currentTextBox.Location = new System.Drawing.Point(886, 38);
             this.currentTextBox.Name = "currentTextBox";
+            this.currentTextBox.ReadOnly = true;
             this.currentTextBox.Size = new System.Drawing.Size(179, 21);
             this.currentTextBox.TabIndex = 18;
             // 
@@ -357,7 +358,7 @@
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(65, 12);
             this.label11.TabIndex = 20;
-            this.label11.Text = "当前记录：";
+            this.label11.Text = "当前学生：";
             // 
             // photoPictureBox
             // 
@@ -379,7 +380,7 @@
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowTemplate.Height = 23;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(823, 226);
+            this.dataGridView1.Size = new System.Drawing.Size(823, 311);
             this.dataGridView1.TabIndex = 20;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.ColumnHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_ColumnHeaderMouseClick);
@@ -389,13 +390,13 @@
             this.panel1.Controls.Add(this.dataGridView1);
             this.panel1.Location = new System.Drawing.Point(11, 72);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(829, 229);
+            this.panel1.Size = new System.Drawing.Size(829, 314);
             this.panel1.TabIndex = 16;
             // 
             // picSelectButton
             // 
             this.picSelectButton.Enabled = false;
-            this.picSelectButton.Location = new System.Drawing.Point(908, 330);
+            this.picSelectButton.Location = new System.Drawing.Point(900, 277);
             this.picSelectButton.Name = "picSelectButton";
             this.picSelectButton.Size = new System.Drawing.Size(152, 23);
             this.picSelectButton.TabIndex = 21;
@@ -411,7 +412,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1088, 459);
+            this.ClientSize = new System.Drawing.Size(1088, 538);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.picDeleteButton);

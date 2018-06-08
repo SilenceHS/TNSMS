@@ -36,19 +36,21 @@
             // nameTextBox
             // 
             this.nameTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(232)))), ((int)(((byte)(240)))));
+            this.nameTextBox.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.nameTextBox.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.nameTextBox.Location = new System.Drawing.Point(122, 107);
             this.nameTextBox.Name = "nameTextBox";
-            this.nameTextBox.Size = new System.Drawing.Size(151, 21);
+            this.nameTextBox.Size = new System.Drawing.Size(151, 23);
             this.nameTextBox.TabIndex = 1;
             // 
             // codeTextBox
             // 
             this.codeTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(232)))), ((int)(((byte)(240)))));
+            this.codeTextBox.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.codeTextBox.Location = new System.Drawing.Point(122, 165);
             this.codeTextBox.Name = "codeTextBox";
             this.codeTextBox.PasswordChar = '*';
-            this.codeTextBox.Size = new System.Drawing.Size(151, 21);
+            this.codeTextBox.Size = new System.Drawing.Size(151, 23);
             this.codeTextBox.TabIndex = 3;
             // 
             // loginButton
@@ -79,7 +81,7 @@
             this.MinimizeBox = false;
             this.Name = "LoginDialog";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "登录窗口";
+            this.Text = "SilenceHS";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -48,8 +48,8 @@
             // 资料管理ToolStripMenuItem
             // 
             this.资料管理ToolStripMenuItem.Name = "资料管理ToolStripMenuItem";
-            this.资料管理ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
-            this.资料管理ToolStripMenuItem.Text = "资料管理";
+            this.资料管理ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.资料管理ToolStripMenuItem.Text = "成绩查询";
             // 
             // 系统管理ToolStripMenuItem
             // 
@@ -90,8 +90,8 @@
             // 资料查询ToolStripMenuItem
             // 
             this.资料查询ToolStripMenuItem.Name = "资料查询ToolStripMenuItem";
-            this.资料查询ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
-            this.资料查询ToolStripMenuItem.Text = "资料查询";
+            this.资料查询ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.资料查询ToolStripMenuItem.Text = "学生信息查询";
             this.资料查询ToolStripMenuItem.Click += new System.EventHandler(this.资料查询ToolStripMenuItem_Click);
             // 
             // 人事管理ToolStripMenuItem
@@ -101,7 +101,7 @@
             this.资料管理ToolStripMenuItem});
             this.人事管理ToolStripMenuItem.Name = "人事管理ToolStripMenuItem";
             this.人事管理ToolStripMenuItem.Size = new System.Drawing.Size(68, 21);
-            this.人事管理ToolStripMenuItem.Text = "人事管理";
+            this.人事管理ToolStripMenuItem.Text = "学生管理";
             // 
             // userStatusStrip
             // 
