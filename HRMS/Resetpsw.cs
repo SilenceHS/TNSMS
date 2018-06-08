@@ -107,6 +107,7 @@ namespace HRMS
             this.button2.TabIndex = 5;
             this.button2.Text = "取消";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label3
             // 
@@ -178,6 +179,11 @@ namespace HRMS
                 MessageBox.Show("连接数据库失败");//出现异常弹出提示
                 Application.Exit();
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

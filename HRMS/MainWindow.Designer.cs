@@ -41,6 +41,7 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.文件ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.退出ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.修改密码ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.userStatusStrip.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -48,14 +49,15 @@
             // 资料管理ToolStripMenuItem
             // 
             this.资料管理ToolStripMenuItem.Name = "资料管理ToolStripMenuItem";
-            this.资料管理ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.资料管理ToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.资料管理ToolStripMenuItem.Text = "成绩查询";
             // 
             // 系统管理ToolStripMenuItem
             // 
             this.系统管理ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.重新登录ToolStripMenuItem,
-            this.用户管理ToolStripMenuItem});
+            this.用户管理ToolStripMenuItem,
+            this.修改密码ToolStripMenuItem});
             this.系统管理ToolStripMenuItem.Name = "系统管理ToolStripMenuItem";
             this.系统管理ToolStripMenuItem.Size = new System.Drawing.Size(68, 21);
             this.系统管理ToolStripMenuItem.Text = "系统管理";
@@ -63,14 +65,14 @@
             // 重新登录ToolStripMenuItem
             // 
             this.重新登录ToolStripMenuItem.Name = "重新登录ToolStripMenuItem";
-            this.重新登录ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.重新登录ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.重新登录ToolStripMenuItem.Text = "重新登录";
             this.重新登录ToolStripMenuItem.Click += new System.EventHandler(this.重新登录ToolStripMenuItem_Click);
             // 
             // 用户管理ToolStripMenuItem
             // 
             this.用户管理ToolStripMenuItem.Name = "用户管理ToolStripMenuItem";
-            this.用户管理ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.用户管理ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.用户管理ToolStripMenuItem.Text = "用户管理";
             // 
             // 帮助ToolStripMenuItem
@@ -90,7 +92,7 @@
             // 资料查询ToolStripMenuItem
             // 
             this.资料查询ToolStripMenuItem.Name = "资料查询ToolStripMenuItem";
-            this.资料查询ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.资料查询ToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.资料查询ToolStripMenuItem.Text = "学生信息查询";
             this.资料查询ToolStripMenuItem.Click += new System.EventHandler(this.资料查询ToolStripMenuItem_Click);
             // 
@@ -147,6 +149,13 @@
             this.退出ToolStripMenuItem.Text = "退出";
             this.退出ToolStripMenuItem.Click += new System.EventHandler(this.退出ToolStripMenuItem_Click);
             // 
+            // 修改密码ToolStripMenuItem
+            // 
+            this.修改密码ToolStripMenuItem.Name = "修改密码ToolStripMenuItem";
+            this.修改密码ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.修改密码ToolStripMenuItem.Text = "修改密码";
+            this.修改密码ToolStripMenuItem.Click += new System.EventHandler(this.修改密码ToolStripMenuItem_Click);
+            // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -179,7 +188,7 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem 文件ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 退出ToolStripMenuItem;
-
+        private System.Windows.Forms.ToolStripMenuItem 修改密码ToolStripMenuItem;
     }
 }
 
