@@ -17,6 +17,7 @@ namespace HRMS
         {
             this.user = user;
             InitializeComponent();
+            linkLabel1.BackColor = Color.Transparent;
             //this.ControlBox = false;//取消右上角关闭按钮显示
         }
 
@@ -61,9 +62,16 @@ namespace HRMS
                 Application.Exit();
             }
         }
-       /* private void cancleButton_Click(object sender, EventArgs e)
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Application.Exit();
-        }*/
+            Resetpsw rst = new Resetpsw();
+            rst.ShowDialog();
+            
+        }
+        /* private void cancleButton_Click(object sender, EventArgs e)
+{
+    Application.Exit();
+}*/
     }
 }
