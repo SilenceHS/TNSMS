@@ -126,7 +126,7 @@
             "学号",
             "姓名",
             "性别",
-            "职务",
+            "职位",
             "电话",
             "地址",
             "Email"});
@@ -285,7 +285,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(51, 18);
             this.label3.TabIndex = 6;
-            this.label3.Text = "ID";
+            this.label3.Text = "学号";
             // 
             // saveButton
             // 

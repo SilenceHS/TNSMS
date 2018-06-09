@@ -28,10 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
             this.资料管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.系统管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.重新登录ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.用户管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.修改密码ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.帮助ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.资料查询ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -41,7 +43,11 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.文件ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.退出ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.修改密码ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.quitbutton = new System.Windows.Forms.Button();
+            this.changepswbutton = new System.Windows.Forms.Button();
+            this.relogbutton = new System.Windows.Forms.Button();
+            this.mainbutton = new System.Windows.Forms.Button();
+            this.gradebutton = new System.Windows.Forms.Button();
             this.userStatusStrip.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -65,15 +71,22 @@
             // 重新登录ToolStripMenuItem
             // 
             this.重新登录ToolStripMenuItem.Name = "重新登录ToolStripMenuItem";
-            this.重新登录ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.重新登录ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.重新登录ToolStripMenuItem.Text = "重新登录";
             this.重新登录ToolStripMenuItem.Click += new System.EventHandler(this.重新登录ToolStripMenuItem_Click);
             // 
             // 用户管理ToolStripMenuItem
             // 
             this.用户管理ToolStripMenuItem.Name = "用户管理ToolStripMenuItem";
-            this.用户管理ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.用户管理ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.用户管理ToolStripMenuItem.Text = "用户管理";
+            // 
+            // 修改密码ToolStripMenuItem
+            // 
+            this.修改密码ToolStripMenuItem.Name = "修改密码ToolStripMenuItem";
+            this.修改密码ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.修改密码ToolStripMenuItem.Text = "修改密码";
+            this.修改密码ToolStripMenuItem.Click += new System.EventHandler(this.修改密码ToolStripMenuItem_Click);
             // 
             // 帮助ToolStripMenuItem
             // 
@@ -149,18 +162,101 @@
             this.退出ToolStripMenuItem.Text = "退出";
             this.退出ToolStripMenuItem.Click += new System.EventHandler(this.退出ToolStripMenuItem_Click);
             // 
-            // 修改密码ToolStripMenuItem
+            // quitbutton
             // 
-            this.修改密码ToolStripMenuItem.Name = "修改密码ToolStripMenuItem";
-            this.修改密码ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.修改密码ToolStripMenuItem.Text = "修改密码";
-            this.修改密码ToolStripMenuItem.Click += new System.EventHandler(this.修改密码ToolStripMenuItem_Click);
+            this.quitbutton.BackColor = System.Drawing.Color.Transparent;
+            this.quitbutton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.quitbutton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.quitbutton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.quitbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.quitbutton.Location = new System.Drawing.Point(652, 218);
+            this.quitbutton.Margin = new System.Windows.Forms.Padding(0);
+            this.quitbutton.Name = "quitbutton";
+            this.quitbutton.Size = new System.Drawing.Size(110, 110);
+            this.quitbutton.TabIndex = 6;
+            this.quitbutton.UseVisualStyleBackColor = false;
+            this.quitbutton.Click += new System.EventHandler(this.quitbutton_Click);
+            this.quitbutton.MouseEnter += new System.EventHandler(this.quitbutton_MouseEnter);
+            this.quitbutton.MouseLeave += new System.EventHandler(this.quitbutton_MouseLeave);
+            // 
+            // changepswbutton
+            // 
+            this.changepswbutton.BackColor = System.Drawing.Color.Transparent;
+            this.changepswbutton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.changepswbutton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.changepswbutton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.changepswbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.changepswbutton.Location = new System.Drawing.Point(358, 218);
+            this.changepswbutton.Margin = new System.Windows.Forms.Padding(0);
+            this.changepswbutton.Name = "changepswbutton";
+            this.changepswbutton.Size = new System.Drawing.Size(110, 110);
+            this.changepswbutton.TabIndex = 7;
+            this.changepswbutton.UseVisualStyleBackColor = false;
+            this.changepswbutton.Click += new System.EventHandler(this.changepswbutton_Click);
+            this.changepswbutton.MouseEnter += new System.EventHandler(this.changepswbutton_MouseEnter);
+            this.changepswbutton.MouseLeave += new System.EventHandler(this.changepswbutton_MouseLeave);
+            // 
+            // relogbutton
+            // 
+            this.relogbutton.BackColor = System.Drawing.Color.Transparent;
+            this.relogbutton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.relogbutton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.relogbutton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.relogbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.relogbutton.Location = new System.Drawing.Point(505, 218);
+            this.relogbutton.Name = "relogbutton";
+            this.relogbutton.Size = new System.Drawing.Size(110, 110);
+            this.relogbutton.TabIndex = 8;
+            this.relogbutton.UseVisualStyleBackColor = false;
+            this.relogbutton.Click += new System.EventHandler(this.relogbutton_Click);
+            this.relogbutton.MouseEnter += new System.EventHandler(this.relogbutton_MouseEnter);
+            this.relogbutton.MouseLeave += new System.EventHandler(this.relogbutton_MouseLeave);
+            // 
+            // mainbutton
+            // 
+            this.mainbutton.BackColor = System.Drawing.Color.Transparent;
+            this.mainbutton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.mainbutton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.mainbutton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.mainbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.mainbutton.Location = new System.Drawing.Point(64, 218);
+            this.mainbutton.Margin = new System.Windows.Forms.Padding(0);
+            this.mainbutton.Name = "mainbutton";
+            this.mainbutton.Size = new System.Drawing.Size(110, 110);
+            this.mainbutton.TabIndex = 9;
+            this.mainbutton.UseVisualStyleBackColor = false;
+            this.mainbutton.Click += new System.EventHandler(this.mainbutton_Click);
+            this.mainbutton.MouseEnter += new System.EventHandler(this.mainbutton_MouseEnter);
+            this.mainbutton.MouseLeave += new System.EventHandler(this.mainbutton_MouseLeave);
+            // 
+            // gradebutton
+            // 
+            this.gradebutton.BackColor = System.Drawing.Color.Transparent;
+            this.gradebutton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.gradebutton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.gradebutton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.gradebutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.gradebutton.Location = new System.Drawing.Point(211, 218);
+            this.gradebutton.Margin = new System.Windows.Forms.Padding(0);
+            this.gradebutton.Name = "gradebutton";
+            this.gradebutton.Size = new System.Drawing.Size(110, 110);
+            this.gradebutton.TabIndex = 10;
+            this.gradebutton.UseVisualStyleBackColor = false;
+            this.gradebutton.Click += new System.EventHandler(this.gradebutton_Click);
+            this.gradebutton.MouseEnter += new System.EventHandler(this.gradebutton_MouseEnter);
+            this.gradebutton.MouseLeave += new System.EventHandler(this.gradebutton_MouseLeave);
             // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(844, 519);
+            this.Controls.Add(this.gradebutton);
+            this.Controls.Add(this.mainbutton);
+            this.Controls.Add(this.relogbutton);
+            this.Controls.Add(this.changepswbutton);
+            this.Controls.Add(this.quitbutton);
             this.Controls.Add(this.userStatusStrip);
             this.Controls.Add(this.menuStrip1);
             this.Name = "MainWindow";
@@ -189,6 +285,11 @@
         private System.Windows.Forms.ToolStripMenuItem 文件ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 退出ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 修改密码ToolStripMenuItem;
+        private System.Windows.Forms.Button quitbutton;
+        private System.Windows.Forms.Button changepswbutton;
+        private System.Windows.Forms.Button relogbutton;
+        private System.Windows.Forms.Button mainbutton;
+        private System.Windows.Forms.Button gradebutton;
     }
 }
 

@@ -47,6 +47,7 @@ namespace HRMS
         }
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Resetpsw));
             this.label1 = new System.Windows.Forms.Label();
             this.reidtextBox = new System.Windows.Forms.TextBox();
             this.reemtextBox = new System.Windows.Forms.TextBox();
@@ -60,11 +61,11 @@ namespace HRMS
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(35, 36);
+            this.label1.Location = new System.Drawing.Point(16, 35);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 12);
+            this.label1.Size = new System.Drawing.Size(83, 12);
             this.label1.TabIndex = 0;
-            this.label1.Text = "请输入ID号";
+            this.label1.Text = "请输入ID/学号";
             // 
             // reidtextBox
             // 
@@ -91,28 +92,34 @@ namespace HRMS
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(31, 190);
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(36, 190);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(68, 38);
+            this.button1.Size = new System.Drawing.Size(63, 38);
             this.button1.TabIndex = 4;
             this.button1.Text = "确定";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(170, 190);
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(179, 190);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(71, 38);
+            this.button2.Size = new System.Drawing.Size(62, 38);
             this.button2.TabIndex = 5;
             this.button2.Text = "取消";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(34, 91);
+            this.label3.Location = new System.Drawing.Point(35, 90);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(65, 12);
             this.label3.TabIndex = 6;
@@ -120,9 +127,9 @@ namespace HRMS
             // 
             // renametextBox
             // 
-            this.renametextBox.Location = new System.Drawing.Point(109, 87);
+            this.renametextBox.Location = new System.Drawing.Point(108, 86);
             this.renametextBox.Name = "renametextBox";
-            this.renametextBox.Size = new System.Drawing.Size(131, 21);
+            this.renametextBox.Size = new System.Drawing.Size(133, 21);
             this.renametextBox.TabIndex = 7;
             // 
             // Resetpsw

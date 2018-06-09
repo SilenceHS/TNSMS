@@ -64,7 +64,7 @@
             this.loginButton.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.loginButton.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.loginButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.loginButton.Location = new System.Drawing.Point(153, 228);
+            this.loginButton.Location = new System.Drawing.Point(149, 228);
             this.loginButton.Margin = new System.Windows.Forms.Padding(0);
             this.loginButton.Name = "loginButton";
             this.loginButton.Size = new System.Drawing.Size(50, 50);
