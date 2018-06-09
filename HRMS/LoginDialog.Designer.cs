@@ -56,22 +56,30 @@
             // 
             // loginButton
             // 
+            this.loginButton.BackColor = System.Drawing.Color.Transparent;
+            this.loginButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.loginButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.loginButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.loginButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.loginButton.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.loginButton.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.loginButton.Image = global::HRMS.Properties.Resources.power_24px_1175644_easyicon_net;
             this.loginButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.loginButton.Location = new System.Drawing.Point(153, 246);
+            this.loginButton.Location = new System.Drawing.Point(153, 228);
+            this.loginButton.Margin = new System.Windows.Forms.Padding(0);
             this.loginButton.Name = "loginButton";
-            this.loginButton.Size = new System.Drawing.Size(32, 32);
+            this.loginButton.Size = new System.Drawing.Size(50, 50);
             this.loginButton.TabIndex = 4;
             this.loginButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.loginButton.UseVisualStyleBackColor = true;
+            this.loginButton.UseVisualStyleBackColor = false;
             this.loginButton.Click += new System.EventHandler(this.loginButton_Click);
+            this.loginButton.MouseDown += new System.Windows.Forms.MouseEventHandler(this.loginButton_MouseDown);
+            this.loginButton.MouseEnter += new System.EventHandler(this.loginButton_MouseEnter);
+            this.loginButton.MouseLeave += new System.EventHandler(this.loginButton_MouseLeave);
             // 
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(138, 294);
+            this.linkLabel1.Location = new System.Drawing.Point(144, 294);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(65, 12);
             this.linkLabel1.TabIndex = 5;

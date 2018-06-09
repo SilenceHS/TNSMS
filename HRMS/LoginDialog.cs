@@ -18,6 +18,7 @@ namespace HRMS
             this.user = user;
             InitializeComponent();
             linkLabel1.BackColor = Color.Transparent;
+            loginButton.BackgroundImage = Image.FromFile("log.png");
             //this.ControlBox = false;//取消右上角关闭按钮显示
         }
 
@@ -69,9 +70,24 @@ namespace HRMS
             rst.ShowDialog();
             
         }
+
+        private void loginButton_MouseEnter(object sender, EventArgs e)
+        {
+            loginButton.BackgroundImage = Image.FromFile("log2.png");
+        }
+
+        private void loginButton_MouseLeave(object sender, EventArgs e)
+        {
+            loginButton.BackgroundImage = Image.FromFile("log.png");
+        }
+
+        private void loginButton_MouseDown(object sender, MouseEventArgs e)
+        {
+            loginButton.BackgroundImage = Image.FromFile("log3.png");
+        }
         /* private void cancleButton_Click(object sender, EventArgs e)
 {
-    Application.Exit();
+Application.Exit();
 }*/
     }
 }
